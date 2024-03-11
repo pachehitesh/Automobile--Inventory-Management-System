@@ -1,0 +1,13 @@
+create table invoice(dt date,cust_code number,invno number,cust_name varchar2(30),address varchar2(30),model varchar2(30),frame1 varchar2(10),frame2 varchar2(10),engine1 varchar2(10),engine2 varchar2(10),cost number,rtorge number,rtohc number,ic number,hpa number)
+create table temp_invoice(dt date,cust_code number,invno number,cust_name varchar2(30),address varchar2(30),model varchar2(30),frame1 varchar2(10),frame2 varchar2(10),engine1 varchar2(10),engine2 varchar2(10),cost number,rtorge number,rtohc number,ic number,hpa number)
+
+create table temp_stock (dt varchar2(15),invno varchar2(15),frame1 varchar2(10),frame2 varchar2(10),engine1 varchar2(10),engine2 varchar2(10),disdt varchar2(15),recdt varchar2(15),status varchar2(5),model varchar2(60),plant varchar2(50),mcolor varchar2(30)) 
+create table stock (dt varchar2(15),invno varchar2(15),frame1 varchar2(10),frame2 varchar2(10),engine1 varchar2(10),engine2 varchar2(10),disdt varchar2(15),recdt varchar2(15),status varchar2(5),model varchar2(60),plant varchar2(50),mcolor varchar2(30)) 
+
+create table model_list (mname varchar2(30), Chassisno varchar2(30), engno varchar2(15),rate number)
+
+create table rates(cf varchar2(15),ME varchar2(15),model varchar2(50),rates number)
+
+create table temp_model_list (mname varchar2(30), Chassisno varchar2(30), engno varchar2(15),rate number) 
+
+create table passwd(userid varchar2(30),pw varchar2(30))
